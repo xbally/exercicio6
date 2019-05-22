@@ -1,0 +1,47 @@
+create table tb_usuario (
+id_usuario serial primary key,
+login_usuario varchar(50),
+senha_usuario varchar(50),
+nome_usuario varchar(100)
+);
+
+insert into tb_usuario (login_usuario, senha_usuario, nome_usuario) values ('tiagog', '123', 'Tiago Grunhagen');
+insert into tb_usuario (login_usuario, senha_usuario, nome_usuario) values ('ronaldod', '123', 'Ronaldo Donizeti');
+insert into tb_usuario (login_usuario, senha_usuario, nome_usuario) values ('admin', 'admin', 'Administrador');
+insert into tb_usuario (login_usuario, senha_usuario, nome_usuario) values ('á', 'í', 'ú');
+
+create table tb_cliente (
+id_cliente serial primary key,
+cpf_cliente char(11),
+nome_cliente varchar(100),
+email_cliente varchar(100),
+data_cliente date,
+rua_cliente varchar(100),
+nr_cliente varchar(100),
+cep_cliente char(8),
+cidade_cliente varchar(100),
+uf_cliente char(2)
+);
+
+
+
+insert into tb_cliente (cpf_cliente, nome_cliente, email_cliente, data_cliente, rua_cliente, nr_cliente, cep_cliente, cidade_cliente,uf_cliente)
+values ('08898622902','leandrao dos santos souza','leandro@email.com','2018-09-14','irati','31','41083650','colombo','pr');
+insert into tb_cliente (cpf_cliente, nome_cliente, email_cliente, data_cliente, rua_cliente, nr_cliente, cep_cliente, cidade_cliente,uf_cliente)
+values ('66655566655','mateus piloto','mateus@email.com','2018-09-15','sapopema','666','66655566','curitiba','pr');
+insert into tb_cliente (cpf_cliente, nome_cliente, email_cliente, data_cliente, rua_cliente, nr_cliente, cep_cliente, cidade_cliente,uf_cliente)
+values ('99988899988','gabriel alves','gabriel@email.com','2018-09-16','disney','24','24242424','orlando','pr');
+insert into tb_cliente (cpf_cliente, nome_cliente, email_cliente, data_cliente, rua_cliente, nr_cliente, cep_cliente, cidade_cliente,uf_cliente)
+values ('89898998989','tiago grunnhangemn','tiago@email.com','2018-09-17','ceu','69','69696969','curitiba','pr');
+insert into tb_cliente (cpf_cliente, nome_cliente, email_cliente, data_cliente, rua_cliente, nr_cliente, cep_cliente, cidade_cliente,uf_cliente)
+values ('78787878787','romualdo donizete','ronaldo@email.com','2018-09-18','mascarenhas','31','78787878','curitiba','pr');
+insert into tb_cliente (cpf_cliente, nome_cliente, email_cliente, data_cliente, rua_cliente, nr_cliente, cep_cliente, cidade_cliente,uf_cliente)
+values ('56565656565','maria jose','maria@jose.com','2018-09-19','vasco','91','90909090','pinhais','pr');
+insert into tb_cliente (cpf_cliente, nome_cliente, email_cliente, data_cliente, rua_cliente, nr_cliente, cep_cliente, cidade_cliente,uf_cliente)
+values ('34343434343','jose maria','jose@maria.com','2018-09-20','vasconcelos','899','78787878','sao jose dos pinhais','pr');
+insert into tb_cliente (cpf_cliente, nome_cliente, email_cliente, data_cliente, rua_cliente, nr_cliente, cep_cliente, cidade_cliente,uf_cliente)
+values ('23232323232','jovem nerd','alotoni@email.com','2018-09-21','7 de setembro','35','12345678','curitiba','pr');
+insert into tb_cliente (cpf_cliente, nome_cliente, email_cliente, data_cliente, rua_cliente, nr_cliente, cep_cliente, cidade_cliente,uf_cliente)
+values ('12121212121','azhagal o anao','deivepasos@email.com','2018-09-23','trajano','999','99999999','curitiba','pr');
+insert into tb_cliente (cpf_cliente, nome_cliente, email_cliente, data_cliente, rua_cliente, nr_cliente, cep_cliente, cidade_cliente,uf_cliente)
+values ('90909090909','papai','papai@email.com','2018-09-26','irati','31','41083650','colombo','pr');

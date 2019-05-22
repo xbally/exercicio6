@@ -1,0 +1,14 @@
+se por exemplo a porta 8025 estiver em uso
+
+listagem de todas as portas usadas pelo sistema: 
+netstat -a -n -o
+
+listagem especifica do uso da porta 8025
+netstat -a -n -o | findstr :8025
+
+exemplo de resposta:
+C:\Users\leand>netstat -a -n -o | findstr :8025
+  TCP    127.0.0.1:8025         0.0.0.0:0              LISTENING       3792
+
+para finalizar o processo que está usando a porta, é só usar o numero pid(numero de 4 digitos) que aparece na listagem
+taskKill.exe /F /PID 3792
